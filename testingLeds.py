@@ -1,6 +1,6 @@
 #Author: Rohan Keenoy
 #Playing with the adafruit breadboard kit for the pico
-#focusing on making the leds animate to the song
+
 from machine import Pin, PWM
 import time
 
@@ -55,10 +55,9 @@ blink182= ["A4","F4","QR", "E4", "F4", "QR", "A4","F4","QR", "E4", "F4", "QR", "
 
 while True:
     if btn.value() == 0:
-        print("BTN 1 is Pressed!")
+        print("P7K1 is Pressed!")
         rocknRoll(blink182)
         buzzr.duty_u16(0)
-        led.value(1)
         time.sleep(0.05)
     else:
         led.value(0)
